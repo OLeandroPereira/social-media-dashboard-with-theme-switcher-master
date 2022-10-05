@@ -1,27 +1,23 @@
 body{
-    margin: 0;
-   
+    
     background: linear-gradient() hsl(210, 78%, 56%) para hsl(146, 68%, 55%);
     
-    min-height: 100vh;
-
+    background: hsl(230, 17%, 14%);
     font-family: 'inter';
 }
 
 #page{
-    background: hsl(230, 17%, 14%); 
-    width: 1500px;
-    height: 800px;
+    background: hsl(232, 19%, 15%);
+    width: 1440px;
     margin: 0 auto;
     border-radius: 20px;
-    
-    
 }
 
 header{
-    background: hsl(232, 19%, 15%);
-    width: 1500px;
-    height: 200px;
+    
+    background: hsl(236, 19%, 17%);
+    width: 1440px;
+    height: 125px;
     margin: auto;
     padding-top: 30px;
     border-radius: 25px;
@@ -29,25 +25,27 @@ header{
 }
 
 .container{
-    width: 1500px;
+    width: 1440px;
     justify-items: center;
+    margin-top: 100px;
 }
 
 nav{
-    width: 1500px;
+    width: 1440px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 49rem;
 }
 
 article{
     width: 270px;    
     background: hsl(228, 28%, 20%);
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 section{
-    width: 1500px;
+    width: 1440px;
     display: flex;  
     justify-content: center;
     align-items: center;
@@ -56,26 +54,31 @@ section{
     color: hsl(0, 0%, 100%);
 }
 
+strong{
+    font-size: 15px;
+}
+
 p{
-    color: hsl(0, 0%, 100%);
     margin-left: 175px;
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    margin-top: 30px;
+    
 }
 
 aside{
     width: 270px;    
     background: hsl(228, 28%, 20%);
-    border-radius: 10px;
-    height: 130px;
+    border-radius: 5px;
+    height: 115px;
     
 }
 
 .principal-secundario {  display: grid;
-    grid-template-columns: 0fr 0fr 0fr 0fr;
-    grid-template-rows: 0.5fr 0.5fr 1fr 1fr 0.5fr;
     grid-auto-columns: 5fr;
     gap: 25px;
     width: 1000px;
-    margin-left: 170px;
+    margin-left: 145px;
     grid-auto-flow: row;
     text-align: center;
     color: hsl(0, 0%, 100%);
@@ -103,14 +106,38 @@ aside{
   
 .bloco-7{
     
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: flex-end;
     align-content: center;
     flex-wrap: wrap;
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 10rem;
+      
+}
+
+.resultado{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    gap: 7rem;
+    margin-top: 7px;
+    font-size: 30px;
+}
+
+span{
+    font-size: 13px;
+    color: hsl(356, 69%, 56%);
+}
 
 
+h5{
+    color: hsl(228, 34%, 66%);
+}
 
 
 .attribution { font-size: 11px; text-align: center; }
