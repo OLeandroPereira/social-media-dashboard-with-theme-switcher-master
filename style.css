@@ -1,37 +1,32 @@
 body{
-    
     background: linear-gradient() hsl(210, 78%, 56%) para hsl(146, 68%, 55%);
-    
     background: hsl(230, 17%, 14%);
     font-family: 'inter';
+    width: 100vw;
+    height: 100vh;
 }
 
 #page{
     background: hsl(232, 19%, 15%);
-    width: 1440px;
+    width: 70%;
+    height: 80%;
     margin: 0 auto;
     border-radius: 20px;
 }
 
 header{
-    
     background: hsl(236, 19%, 17%);
-    width: 1440px;
-    height: 125px;
+    width: 100%;
     margin: auto;
     padding-top: 30px;
     border-radius: 25px;
     color: hsl(0, 0%, 100%);
 }
 
-.container{
-    width: 1440px;
-    justify-items: center;
-    margin-top: 100px;
-}
+
 
 nav{
-    width: 1440px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
