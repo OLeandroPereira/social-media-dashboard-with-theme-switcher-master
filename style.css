@@ -14,34 +14,37 @@ body{
     margin-top: 5rem;
 }
 
+
 header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
     background: hsl(236, 19%, 17%);
     width: 100%;
     height: 13rem;
     border-radius: 25px;
     color: hsl(0, 0%, 100%);
-    align-items: flex-end;
-}
-
-
-
-nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 23rem;
 }
 
 article{
-    width: 70%;    
+    width: 70%; 
+    height: 190px;   
     background: hsl(228, 28%, 20%);
     border-radius: 5px;
+    
+    
+}
+
+.title-box{
+    justify-content: space-around;
+    text-align: left;
+    align-items: baseline;
 }
 
 section{
-    z-index: -6;
     width: 70%;
+    height: 80%;
+    z-index: -6px;
     display: flex;  
     justify-content: center;
     align-items: center;
@@ -57,20 +60,29 @@ strong{
 }
 
 p{
+    color: hsl(228, 34%, 66%);
+}
+
+span{
+    color: hsl(228, 34%, 66%);
+    margin: 0;
+    font-size: 13px;
+}
+
+
+.sub-title{
     color: hsl(0, 0%, 100%);
     font-weight: bold;
     margin-left: 13rem;
-    
-    
 }
+
+
 
 aside{
     width: 100%;  
     height: 8rem;  
     background: hsl(228, 28%, 20%);
     border-radius: 5px;
-    
-    
 }
 
 .grid-container {  
@@ -78,7 +90,8 @@ aside{
     grid-auto-columns: 5fr;
     gap: 2rem;
     width: 70%;
-    margin: 0 auto;
+    height: 80%;
+    margin: auto;
     grid-auto-flow: row;
     text-align: center;
     color: hsl(0, 0%, 100%);
@@ -88,21 +101,21 @@ aside{
       
   }
   
-  .box1 { grid-area: box1; }
+  .card1 { grid-area: card1; }
   
-  .box2 { grid-area: box2; }
+  .card2 { grid-area: card2; }
   
-  .box3 { grid-area: box3; }
+  .card3 { grid-area: card3; }
   
-  .box4 { grid-area: box4; }
+  .card4 { grid-area: card4; }
   
-  .box5 { grid-area: box5; }
+  .card5 { grid-area: card5; }
   
-  .box6 { grid-area: box6; }
+  .card6 { grid-area: card6; }
   
-  .box7 { grid-area: box7; }
+  .card7 { grid-area: card7; }
   
-  .box8 { grid-area: box8; }
+  .card8 { grid-area: card8; }
   
 .card{
     
@@ -113,9 +126,9 @@ aside{
 }
 
 .logo{
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: space-around;
+    gap: 10px;
     margin-top: 15px;
 }
 
@@ -133,7 +146,9 @@ aside{
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    color: hsl(0, 0%, 100%);
 }
 
 .up{
@@ -145,11 +160,6 @@ aside{
     font-size: 13px;
     color: hsl(356, 69%, 56%);
 }
-
-h2{
-    align-items: center;
-}  
-
 
 .attribution { 
     font-size: 11px; text-align: center;
