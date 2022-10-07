@@ -2,25 +2,25 @@ body{
     background: linear-gradient() hsl(210, 78%, 56%) para hsl(146, 68%, 55%);
     background: hsl(230, 17%, 14%);
     font-family: 'inter';
-    width: 100vw;
-    height: 100vh;
+    
 }
 
 #page{
     background: hsl(232, 19%, 15%);
-    width: 70%;
-    height: 80%;
+    width: 70vw;
+    height: 80vh;
     margin: 0 auto;
     border-radius: 20px;
+    margin-top: 5rem;
 }
 
 header{
     background: hsl(236, 19%, 17%);
     width: 100%;
-    margin: auto;
-    padding-top: 30px;
+    height: 13rem;
     border-radius: 25px;
     color: hsl(0, 0%, 100%);
+    align-items: flex-end;
 }
 
 
@@ -28,41 +28,44 @@ header{
 nav{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 49rem;
+    gap: 23rem;
 }
 
 article{
-    width: 270px;    
+    width: 70%;    
     background: hsl(228, 28%, 20%);
     border-radius: 5px;
 }
 
 section{
-    width: 1440px;
+    z-index: -6;
+    width: 70%;
     display: flex;  
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     gap: 25px;
+    margin-top: -6rem;
     text-align: center;
     color: hsl(0, 0%, 100%);
 }
 
 strong{
-    font-size: 15px;
+    font-size: 25px;
 }
 
 p{
-    margin-left: 175px;
     color: hsl(0, 0%, 100%);
     font-weight: bold;
-    margin-top: 30px;
+    margin-left: 13rem;
+    
     
 }
 
 aside{
-    width: 270px;    
+    width: 100%;    
     background: hsl(228, 28%, 20%);
     border-radius: 5px;
     height: 115px;
@@ -71,9 +74,9 @@ aside{
 
 .principal-secundario {  display: grid;
     grid-auto-columns: 5fr;
-    gap: 25px;
-    width: 1000px;
-    margin-left: 145px;
+    gap: 2rem;
+    width: 70%;
+    margin: 0 auto;
     grid-auto-flow: row;
     text-align: center;
     color: hsl(0, 0%, 100%);
@@ -110,8 +113,8 @@ aside{
 .logo{
     display: flex;
     align-items: center;
-    justify-content: center; 
-    gap: 10rem;
+    justify-content: space-evenly;
+    gap: 7rem;
       
 }
 
@@ -119,7 +122,7 @@ aside{
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
-    gap: 7rem;
+    gap: 5rem;
     margin-top: 7px;
     font-size: 30px;
 }
@@ -129,12 +132,15 @@ span{
     color: hsl(356, 69%, 56%);
 }
 
+h2{
+    align-items: center;
+}    
 
-h5{
-    color: hsl(228, 34%, 66%);
+
+
+.attribution { 
+    font-size: 11px; text-align: center;
+    color: hsl(0, 7%, 65%);
 }
-
-
-.attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
  
