@@ -26,13 +26,36 @@ header{
     color: hsl(0, 0%, 100%);
 }
 
+input {
+    
+    width: 90px;
+    height: 40px;
+    border-radius: 100px;
+    margin-left: 20px;
+    background: red;
+    cursor: pointer;
+    outline: 0;
+    position: relative;
+    text-align: center;
+}
+
+header .toggle-mode input[type=checkbox] {
+    
+    width: 90px;
+    height: 40px;
+    border-radius: 100px;
+    margin-left: 20px;
+    background: var(--ToggleBtnDark);
+    cursor: pointer;
+    outline: 0;
+    position: relative;
+}
+
 article{
     width: 70%; 
     height: 190px;   
     background: hsl(228, 28%, 20%);
     border-radius: 5px;
-    
-    
 }
 
 .title-box{
