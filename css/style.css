@@ -1,14 +1,79 @@
-:root{
-    --facebook: hsl(208, 92% 53%);
+:root {
+    /* Cores */
+    --lime-green: hsl(163, 72%, 41%);
+    --bright-red: hsl(356, 69%, 56%);
+    --facebook: hsl(208, 92%, 53%);
     --twitter: hsl(203, 89%, 53%);
     --instagram: linear-gradient(35deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
     --youtube: hsl(348, 97%, 39%);
+    --toggle-dark: linear-gradient(225deg, hsl(146, 68%, 55%), hsl(210, 78%, 56%));
+    --toggle-light: hsl(230, 22%, 74%);
+    --toggle-circle-dark: hsl(228, 28%, 20%);
+    --toggle-circle-light: hsl(227, 47%, 96%);
+    --dark-bg: hsl(230, 17%, 14%);
+    --dark-bg-top: hsl(232, 19%, 15%);
+    --dark-bg-card: hsl(228, 28%, 20%);
+    --dark-text1: hsl(228, 34%, 66%);
+    --dark-text2: hsl(0, 0%, 100%);
+    --dark-text3: hsl(0, 0%, 85%);
+    --card-hover-dark: brightness(1.15);
+    --light-bg: hsl(0, 0%, 100%);
+    --light-bg-top: hsl(225, 100%, 98%);
+    --light-bg-card: hsl(227, 47%, 96%);
+    --light-text1: hsl(228, 12%, 44%);
+    --light-text2: hsl(230, 17%, 14%);
+    --card-hover-light: brightness(.95);
+    --background: var(--dark-bg);
+    --header-bg: var(--dark-bg-top);
+    --card-bg: var(--dark-bg-card);
+    --text-color1: var(--dark-text1);
+    --text-color2: var(--dark-text2);
+    --card-hover: var(--card-hover-dark);
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      --background: var(--light-bg);
+      --header-bg: var(--light-bg-top);
+      --card-bg: var(--light-bg-card);
+      --text-color1: var(--light-text1);
+      --text-color2: var(--light-text2);
+      --card-hover: var(--card-hover-light);
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: var(--dark-bg);
+      --header-bg: var(--dark-bg-top);
+      --card-bg: var(--dark-bg-card);
+      --text-color1: var(--dark-text1);
+      --text-color2: var(--dark-text2);
+      --card-hover: var(--card-hover-dark);
+    }
+  }
+
+/* Herdar fontes para entradas e botões */
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
-*,
+/* Remova todas as animações, transições e rolagem suave para pessoas que preferem não vê-las */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 *{
@@ -35,6 +100,7 @@ body{
 
 .container{
     width: 80%;
+    height: 100vh;
     border-radius: 25px;
     margin: 0 auto 0;
 }
@@ -50,36 +116,101 @@ header{
     align-items: baseline;
     background: hsl(236, 19%, 17%);
     width: 100%;
-    height: 20vh;
+    height: 25vh;
     border-radius: 15px;
     color: hsl(0, 0%, 100%);
-    gap: 18rem;
+    gap: 12rem;
 }
 
-.togle-mode{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    gap: 5px;
+
+
+.togle-c {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    padding: 10px 0 16px 0;
 }
 
-input {
-    width: 15px;
-    height: 15px;
-    float: right;
-    align-items: center;
-    border-radius: 100px;
+.togle {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+    grid-area: 1/2/2/3;
+}
+
+.togle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider {
+    background: var(--darkreader-bgimg--toggle-dark);
+}
+
+.slider {
+    position: absolute;
     cursor: pointer;
-    outline: 0;
-    transition: all .5s linear;
-    background-color: #333850;
-    border-color: rgb(56, 61, 63)!important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--toggle-dark);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.slider::before {
+    background-color: var(--darkreader-bg--toggle-circle-dark);
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: var(--toggle-circle-dark);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+input + .slider:hover + .togle-c_title{
+    color: var(--darkreader-text--dark-text2);
+}
+
+.togle-c_title{
+    position: relative;
+    top: -13px;
+    left: -85px;
+    width: max-content;
+    font-size: 14px;
+    box-sizing: border-box;
 }
 
 article{
     background: hsl(228, 28%, 20%);
     border-radius: 5px;
     width: 80%;
+    height: 8rem;
     padding: 5px 15px 0px;
     transition: all 0.1s ease-in-out;
     border-top: 5px solid;
@@ -92,7 +223,7 @@ article:hover{
 }
 
 img{
-    width: 0.4rem;
+    width: 0.6rem;
 }
 
 .c-top--facebook {
@@ -147,7 +278,7 @@ section{
 
 .card-top{
     width: 93%;
-    height: 10rem;
+    height: 7rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -166,23 +297,22 @@ p{
 }
 
 h1{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: hsl(228, 34%, 66%);
 }
 
 h2{
     margin: 10px 10px 0px;
-    font-size: 2.5rem;
+    font-size: 2.rem;
     
 }
 
 span{
-    display: flex;
-    justify-content: space-evenly;
+    display: block;
     color: hsl(228, 34%, 66%);
     font-size: 10px;
     letter-spacing: 0.2rem;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 
@@ -197,7 +327,7 @@ span{
     color: hsl(0, 0%, 100%);
     font-weight: bold;
     padding-left: 7rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
@@ -273,8 +403,6 @@ aside:hover{
     color: hsl(0, 0%, 100%);
 }
 
-
-
 .title-first{
     margin-top: 1.7rem;
     color: hsl(0, 0%, 100%);;
@@ -288,10 +416,6 @@ aside:hover{
 .down{
     font-size: 0.5rem;
     color: hsl(356, 69%, 56%);
-}
-
-footer{
-    margin-top: 5rem;
 }
 
 .attribution { 
