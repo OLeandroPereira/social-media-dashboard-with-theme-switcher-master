@@ -12,201 +12,193 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter+Tight:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
+  <script src="js/script" defer></script>
+
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   
 </head>
-  <body>
+   <body>
 
-    <!--Inicio da primeira Section-->
-<div id="page">
-  <div class="container">
-    <div class="principal">    
-      <header>
-          <div class="title-box">
-            <h1 class="title-first">Social Media Dashboard</h1> 
-              <span>Total Followers: 23,004</span>
-          </div> 
-          
-          <div class="togle-c">
-            <label class="togle">
-                <input type="checkbox" aria-label="darkmode">
-              <span class="slider round">
-                
-              </span>
-              <div class="togle-c_title" aria-hidden="true">Dark Mode</div>
-            </label>  
-          </div>
-      </header>
-     
-      <section>
-        <div class="card-top">
-          
-        <article class="c-top--facebook">
-            <div class="logo"><img src="./images/icon-facebook.svg" alt="logo facebook">
-             <p>@nathanf</p></div>
-            <h2>1987</h2>
-            <span>FOLLOWERS</span>
-            <div class="up">
-              <img src="images/icon-up.svg" alt="">
-              12% Today
+      <!--Cabeçalho-->
+      <div class="dashboard__container">
+         <div class="dashboard__header">
+            <div class="dashboard__datails">
+               <h2>Social Media Dashboard</h2> 
+               <p>Total Followers: 23,004</p>
+            </div>      
+            <div class="togle-button">
+               <p>Dark Mode</p>
+               <input type="checkbox" name="checkbox" id="checkbox">
+               <label for="checkbox" class="label">
+                  <div class="ball"></div>
+               </label>
+            </div>    
+         </div>
+      </div>
+
+      <!--Fim cabaçalho-->
+
+
             
-        </article>
+      <!--Inicio do Primeiro container-->   
+      <div class="container">
+         <div class="dashoard-main">
+            
+            <!--Facebook-->
+            <div class="box">
+               <div class="icon"></div>
+               <img src="/images/icon-facebook.svg" alt="Facebook">
+               <p>@nathanf</p>
+               <h1>1987</h1>
+               <h5>FOLLOWERS</h5>
+            </div>
 
-        <article class="c-top--twitter">
-          <div class="logo"><img src="./images/icon-twitter.svg" alt="logo twitter">
-            <p>@nathanf</p></div>
-          <h2>1044</h2> 
-          <span>FOLLOWERS</span>
-          <div class="up">
-            <img src="images/icon-up.svg" alt="">
-            99% Today
-          </div>
-        </article>
+            <!--Twitter-->
+            <div class="box">
+               <div class="icon"></div>
+               <img src="/images/icon-twitter.svg" alt="Facebook">
+               <p>@nathanf</p>
+               <h1>1044</h1>
+               <h5>FOLLOWERS</h5>
+            </div>
 
-        <article class="c-top--instagram">
-          <div class="logo"><img src="./images/icon-instagram.svg" alt="logo instagram">
-            <p>@realnathanf</p></div>
-          <h2>11k</h2> 
-          <span>FOLLOWERS</span>
-          <div class="up">
-            <img src="images/icon-up.svg" alt="">
-            1099% Today
-          </div>
-        </article>  
+            <!--Instagram-->
+            <div class="box">
+               <div class="icon"></div>
+               <img src="/images/icon-instagram.svg" alt="Facebook">
+               <p>@realnathanf</p>
+               <h1>1099</h1>
+               <h5>FOLLOWERS</h5>
+            </div>  
 
-        <article class="c-top--youtube">
-          <div class="logo"><img src="./images/icon-youtube.svg" alt="logo youtube">
-            <p>@Nathan F.</p></div>
-          <h2>8239</h2> 
-          <span>SUBSCRIBERS</span>
-          <div class="down">
-            <img src="images/icon-down.svg" alt="">
-            144% Today
-          </div>
-        </article>
+            <!--Youtube-->
+            <div class="box">
+               <div class="icon"></div>
+               <img src="/images/icon-youtube.svg" alt="Facebook">
+               <p>@Nathan F.</p>
+               <h1>8239</h1>
+               <h5>SUBSCRIBERS</h5>
+            </div>
+         </div>
+      </div>  
+
+      <!--Fim do Primeiro container-->  
+
+
       
+      <!--Inicio do Segundo container-->  
+      <div class="dashboard__container">
+         <h3>Overview - Today</h3>
+         <div class="dashboard-overview">
+
+            <!--Facebook-->
+            <div class="orverview__box">
+               <div class="first">
+                  <p>Page Views</p>
+                  <img src="/images/icon-facebook.svg" alt="Facebook">
+               </div>
+               <div class="secund"> 
+                  <h2>87</h2>
+                  <img src="/images/icon-up.svg" alt="icon-up">
+                  <p class="up">30%</p>
+               </div>
+            </div>
+
+            <!--Facebook-->
+            <div class="orverview__box">
+               <div class="first">
+                  <p>Likes</p>
+                  <img src="/images/icon-facebook.svg" alt="Facebook">
+               </div>
+               <div class="secund"> 
+                  <h2>52</h2>
+                  <img src="/images/icon-down.svg" alt="icon-up">
+                  <p class="up">2%</p>
+               </div>
+            </div>
+
+            <!--Instagram-->
+            <div class="orverview__box">
+               <div class="first">
+                  <p>Likes</p>
+                  <img src="/images/icon-instagram.svg" alt="Instagram">
+               </div>
+               <div class="secund"> 
+                  <h2>2257</h2>
+                  <img src="/images/icon-up.svg" alt="icon-up">
+                  <p class="up">2%</p>
+               </div>
+            </div>
+
+            <!--Instagram-->
+            <div class="orverview__box">
+               <div class="first">
+                  <p>Profile Views</p>
+                  <img src="/images/icon-instagram.svg" alt="Instagram">
+               </div>
+               <div class="secund"> 
+                  <h2>52k</h2>
+                  <img src="/images/icon-up.svg" alt="icon-up">
+                  <p class="up">1375%</p>
+               </div>
+            </div>
+
+            <!--Twitter-->
+            <div class="orverview__box">
+               <div class="first">
+                  <p>Retweets</p>
+                  <img src="/images/icon-twitter.svg" alt="Twitter">
+               </div>
+               <div class="secund"> 
+                  <h2>117</h2>
+                  <img src="/images/icon-up.svg" alt="icon-up">
+                  <p class="up">303%</p>
+               </div>
+            </div>
+
+            <!--Twitter-->
+            <div class="orverview__box">
+               <div class="first">
+                  <p>Likes</p>
+                  <img src="/images/icon-twitter.svg" alt="Twitter">
+               </div>
+               <div class="secund"> 
+                  <h2>507</h2>
+                  <img src="/images/icon-up.svg" alt="icon-up">
+                  <p class="up">553%</p>
+               </div>
+            </div>
+
+            <!--Youtube-->
+            <div class="orverview__box">
+               <div class="first">
+                  <p>Likes</p>
+                  <img src="/images/icon-youtube.svg" alt="Youtube">
+               </div>
+               <div class="secund"> 
+                  <h2>107</h2>
+                  <img src="/images/icon-down.svg" alt="icon-down">
+                  <p class="up">19%</p>
+               </div>
+            </div>
+
+            <!--Youtube-->
+            <div class="orverview__box">
+               <div class="first">
+                  <p>Total Views</p>
+                  <img src="/images/icon-youtube.svg" alt="Youtube">
+               </div>
+               <div class="secund"> 
+                  <h2>1407</h2>
+                  <img src="/images/icon-down.svg" alt="icon-down">
+                  <p class="up">12%</p>
+               </div>
+            </div>
+         </div>
       </div>
-      </section>  
-    
-    </div>
-    
-    <!-- Fim da primeira Section-->
 
-    <h2 class="sub-title">Overview - Today</h2>
-
-    <!-- Início da segunda Section-->
-
-    <div class="grid-container">
       
-      <aside>
-        <div class="title">
-          <p>Page Views</p>
-        <img src="./images/icon-facebook.svg" alt="logo instagram"></div>
-        <div class="text">
-          <strong>87</strong>
-        <div class="up">
-          <img src="images/icon-up.svg" alt="">
-          3%
-        </div>
-      </aside>  
-
-      <aside>
-        <div class="title">
-        <p>Page Views</p>
-        <img src="./images/icon-facebook.svg" alt="logo instagram"></div>
-        <div class="text">
-          <strong>52</strong>
-        <div class="down">
-          <img src="images/icon-down.svg" alt="">
-          2%
-        </div>
-      </aside>      
-
-      <aside>
-        <div class="title">
-        <p>Page Views</p>
-        <img src="./images/icon-instagram.svg" alt="logo instagram"></div>
-        <div class="text">
-          <strong>5462</strong>
-        <div class="up">
-          <img src="images/icon-up.svg" alt="">
-          2257%
-        </div>
-      </aside>       
-
-      <aside>
-        <div class="title">
-        <p>Page Views</p>
-        <img src="./images/icon-instagram.svg" alt="logo instagram"></div>
-        <div class="text">
-          <strong>52K</strong>
-        <div class="up">
-          <img src="images/icon-up.svg" alt="">
-          1375%
-        </div>
-      </aside>   
-
-      <aside>
-        <div class="title">
-        <p>Page Views</p>
-        <img src="./images/icon-twitter.svg" alt="logo instagram"></div>
-        <div class="text">
-          <strong>117</strong>
-        <div class="up">
-          <img src="images/icon-up.svg" alt="">
-          303%
-        </div>
-      </aside>   
-
-      <aside>
-        <div class="title">
-        <p>Page Views</p>
-        <img src="./images/icon-twitter.svg" alt="logo instagram"></div>
-        <div class="text">
-          <strong>507</strong>
-        <div class="up">
-          <img src="images/icon-up.svg" alt="">
-          553%
-        </div>
-      </aside>    
-
-      <aside>
-        <div class="title">
-        <p>Page Views</p>
-        <img src="./images/icon-youtube.svg" alt="logo instagram"></div>
-        <div class="text">
-          <strong>107</strong>
-        <div class="down">
-          <img src="images/icon-down.svg" alt="">
-          19%
-        </div>
-      </aside>      
-
-      <aside>
-        <div class="title">
-        <p>Page Views</p>
-        <img src="./images/icon-youtube.svg" alt="logo instagram"></div>
-        <div class="text">
-          <strong>1407</strong>
-        <div class="down">
-          <img src="images/icon-down.svg" alt="">
-          12%
-      </div>
-      </aside>   
-    </div> 
-    <footer>
-      <div class="attribution">
-          Desafio por <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-          Codificado por <a href="#">Leandro Pereira</a>.
-      </div>
-    </footer>
-  </div>
-</div>
-
-  <!-- Fim da segunda Section-->
-   
-   
-  
-  </body>
+      <!--Fim do Segundo container-->  
+   </body>
 </html>

@@ -30,101 +30,31 @@
     --text-color2: var(--dark-text2);
     --card-hover: var(--card-hover-dark);
   }
+
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
   
-  @media (prefers-color-scheme: light) {
-    :root {
-      --background: var(--light-bg);
-      --header-bg: var(--light-bg-top);
-      --card-bg: var(--light-bg-card);
-      --text-color1: var(--light-text1);
-      --text-color2: var(--light-text2);
-      --card-hover: var(--card-hover-light);
-    }
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --background: var(--dark-bg);
-      --header-bg: var(--dark-bg-top);
-      --card-bg: var(--dark-bg-card);
-      --text-color1: var(--dark-text1);
-      --text-color2: var(--dark-text2);
-      --card-hover: var(--card-hover-dark);
-    }
-  }
-
-/* Herdar fontes para entradas e botões */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Remova todas as animações, transições e rolagem suave para pessoas que preferem não vê-las */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-
-  *,
-*::before,
-*::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    top: 0;
-}
-
 body{
-    background: linear-gradient() hsl(210, 78%, 56%) para hsl(146, 68%, 55%);
     background: hsl(230, 17%, 14%);
-    font-family: 'inter';
-    font-size: 15px;
-    width: 100vw;
-    height: 100vh;
+    font-family: 'inter', sans-serif;
+    font-size: 14px;
 }
 
-#page{
-    border: 0;
-    width: 100%;
-    margin: auto;
-}
-
-.container{
+.dashboard__container{
     width: 80%;
-    height: 100vh;
-    border-radius: 25px;
-    margin: 0 auto 0;
+    margin: 50px auto;
 }
 
-.principal{
-    width: 80%;
-    margin: auto;
-}
-
-header{
+.dashboard__header{
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
-    align-items: baseline;
-    background: hsl(236, 19%, 17%);
-    width: 100%;
-    height: 25vh;
-    border-radius: 15px;
-    color: hsl(0, 0%, 100%);
-    gap: 12rem;
 }
 
-
-
-.togle-c {
+.togle-button{
     display: grid;
     grid-template-columns: 1fr auto;
     justify-content: space-between;
@@ -421,6 +351,7 @@ aside:hover{
 .attribution { 
     font-size: 11px; text-align: center;
     color: hsl(0, 7%, 65%);
+    margin-top: 30px;
 }
 .attribution a { color: hsl(228, 45%, 44%); }
  
