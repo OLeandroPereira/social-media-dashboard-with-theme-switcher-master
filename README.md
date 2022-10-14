@@ -70,9 +70,9 @@ Os usuários devem ser capazes de:
 
 ### O que eu aprendi
 
-Neste projeto aprendi melhorar minha técnica em posicionamento dos elementos, utilizando o Flexbox e Grid layout. A responsividade foi um dos desafios a serem superados neste projeto, mas depois de tanta persistência e estudo consegui solucionar o problema.
+Neste projeto melhorarei minha técnica no posicionamento dos elementos, utilizando o Flexbox e Grid layout. A responsividade foi um dos desafios a serem superados neste projeto, mas depois de tanta persistência e estudo consegui solucionar o problema.
 
-Usei o JavaScript para fazer alteração do tema do painel, e foi mais fácil do eu imagina.
+Usei o JavaScript para fazer alteração do tema do painel, e foi mais fácil do eu imaginava.
 <br>
 <br>
 
