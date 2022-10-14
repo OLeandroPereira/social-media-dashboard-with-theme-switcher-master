@@ -26,9 +26,9 @@
 
 Os usuários devem ser capazes de:
 
-- Visualize o layout ideal para o site, dependendo do tamanho da tela do dispositivo
-- Veja os estados de foco para todos os elementos interativos na página
-- Alterne o tema de cores para sua preferência
+- Visualizar o layout ideal para o site, dependente do tamanho da tela do dispositivo
+- Ver os estados de foco para todos os elementos interativos na página
+- Alternar o tema de cores para sua preferência
 <br>
 <br>
 <br>
@@ -58,11 +58,12 @@ Os usuários devem ser capazes de:
 
 ### Tecnologias utilizadas
 
-- Semantic HTML5 markup
-- CSS custom properties
+- Semantic HTML5 
+- markup
+- CSS 
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
+- Mobile-first 
 - JavaScript 
 <br>
 <br>
@@ -70,9 +71,9 @@ Os usuários devem ser capazes de:
 
 ### O que eu aprendi
 
-Neste projeto melhorarei minha técnica no posicionamento dos elementos, utilizando o Flexbox e Grid layout. A responsividade foi um dos desafios a serem superados neste projeto, mas depois de tanta persistência e estudo consegui solucionar o problema.
+Neste projeto evolui na técnica de posicionamento dos elementos, utilizando o Flexbox e Grid layout. A responsividade foi um dos desafios a serem superados neste projeto, mas depois de tanta persistência e estudo consegui solucionar os problemas que apareceram.
 
-Usei o JavaScript para fazer alteração do tema do painel, e foi mais fácil do eu imaginava.
+Usei o JavaScript para fazer alteração de tema do painel, e foi mais fácil do eu imaginava.
 <br>
 <br>
 
@@ -135,7 +136,7 @@ checkbox.addEventListener('click', function(){
 
 ### Desenvolvimento contínuo
 
-*Estou tendo contato diariamente com código, e está sendo incrível a evolução que venho obtendo nesses últimos dias, meu objetivo principal é estar cada dia mais preparado tecnicamente para realização de grandes projetos.*
+*Estou em contato diariamente com código, e está sendo incrível a evolução que venho obtendo nesses últimos dias, meu objetivo principal é estar cada dia mais preparado tecnicamente para realização de novos projetos.*
 
 <h1>
 
