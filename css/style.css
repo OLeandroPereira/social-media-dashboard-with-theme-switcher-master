@@ -39,21 +39,26 @@
     box-sizing: border-box;
   }
 
+  main {
+    margin: auto 0;
+    height: 100%;
+  }
+
 h1, h2, h3, h4 {
     color: var(--light-bg);
 }  
 
 h1 {
-    font-size: 65px;
+    font-size: 3em;
     transition: ease-in-out 0.5s;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 1.5em;
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 1.5em;
 }
 
 p {
@@ -78,6 +83,7 @@ body {
     font-size: 14px;
     background-color: var(--light-text2);
     transition: ease-in-out 0.5s;
+    height: 100vh;
 }
 
 body.toggle {
@@ -95,7 +101,7 @@ body.toggle h3 {
 h5 {
     color: var(--dark-text1);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.em;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -103,32 +109,34 @@ h5 {
 body {
     background: hsl(230, 17%, 14%);
     font-family: 'inter', sans-serif;
-    font-size: 14px;
+    font-size: 0.7em;
 }
 
 .dashboard__container {
     width: 80%;
-    margin: 50px auto;
+    margin: auto;
 }
 
 .dashboard__container .dashboard__header {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    
 }
 
 .toggle-button {
     display: flex;
+    align-items: center;
 }
 
 .toggle-button p {
-    margin-right: 20px;
+    margin-right: 0.7rem;
 }
 
 label {
     display: flex;
-    height: 25px;
-    width: 50px;
+    height: 1rem;
+    width: 2rem;
     background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
     border-radius: 100px;
     position: relative;
@@ -140,12 +148,12 @@ body.toggle label {
 }
 
 .ball {
-    height: 20px;
-    width: 20px;
+    height: 0.7rem;
+    width: 0.7rem;
     border-radius: 50%;
     background-color: var(--dark-bg);
     position: absolute;
-    top: 2px;
+    top: 0.16rem;
     left: 2px;
     cursor: pointer;
     transition: linear 0.2s;
@@ -155,8 +163,8 @@ body.toggle .ball {
     background-color: #fff;
 }
 
-#check:checked + .label .ball {
-    transform: translate(24px);
+#checkbox:checked + .label .ball {
+    transform: translate(1rem);
 }
 
 #checkbox {
@@ -164,11 +172,22 @@ body.toggle .ball {
 }
 
 .dashboard-main {
-    display: flex;
-    justify-content: space-between;
+    display: grid; 
+    grid-gap: 24px;
+    grid-template-columns: repeat(4,1fr);
+    margin: 1.5rem 0 1rem;
+    position: relative;
+}
+
+.dashboard-main .box {
+    display: block;
+    background-color: var(--dark-bg-card);
+    padding: 5px;
     align-items: center;
-    margin: 50px auto;
-    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    border-top: 3px solid var(--facebook);
 }
 
 .dashboard-main .box:hover {
@@ -219,12 +238,11 @@ body.toggle .dashboard-overview .overview__box:hover {
 }
 
 .dashboard-overview {
-    margin: 30px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;    
-}
+    display: grid; 
+    grid-column-gap: 24px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+  }
 
 body.toggle .dashboard__container h2 {
     color: #000;
@@ -232,11 +250,15 @@ body.toggle .dashboard__container h2 {
 
 .dashboard-overview .overview__box {
     background-color: var(--dark-bg-card);
-    padding: 30px;
-    width: 250px;
-    height: 100%;
+    padding: 10px;
     justify-content: space-between;
-    margin-bottom: 20px;
+   
+}
+
+.second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .dashboard-overview .overview__box:hover {
@@ -251,13 +273,17 @@ body.toggle .dashboard__container h2 {
     padding-bottom: 30px;
 }
 
+.dashboard-overview .overview__box .first p {
+    font-weight: 800;
+}
+
 .dashboard-overview .overview__box .second {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.dashboard-overview .overview__box .second > div {
+.dashboard-overview .overview__box .second > .indicator {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -266,7 +292,6 @@ body.toggle .dashboard__container h2 {
 body.toggle .dashboard__container .overview__box h2 {
     color: #000;
 }
-
 
 
 

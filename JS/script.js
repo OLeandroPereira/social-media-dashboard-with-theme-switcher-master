@@ -1,6 +1,7 @@
-var checkbox = document.getElementById('togle-tema');
-console.log(checkbox);
+const checkbox = document.querySelector('#checkbox');
+const body = document.querySelector('body');
 
-modo(){
-    console.log(checkbox.nodeValue);
-}
+checkbox.addEventListener('click', function(){
+    body.classList.toggle('toggle')
+})
+
