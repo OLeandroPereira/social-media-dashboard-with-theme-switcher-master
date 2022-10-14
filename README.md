@@ -32,21 +32,24 @@ Os usuários devem ser capazes de:
 <br>
 <br>
 <br>
+
 ### Captura de tela
 <br>
 
-
+<h3>Tema Dark</h3>
 <div align="center">
   <img src="design/active-states-dark.jpg"/>
+</div>
+<h3>Tema Light</h3>
+<div align="center">  
   <img src="design/active-states-light.jpg">
-  <img src="">
-</div> 
+ </div>
 
 
 ### Links
 
 
-- URL do site: [Painel de Mídia Social](https://paineldemidiasocial.netlify.app/)
+- Veja o deploy: [Painel de Mídia Social](https://paineldemidiasocial.netlify.app/)
 
 <h1></h1>
 
