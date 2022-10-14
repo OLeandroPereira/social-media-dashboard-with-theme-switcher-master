@@ -1,18 +1,25 @@
-# Frontend Mentor - Painel de mídia social com solução de alternador de temas
+# - Painel de mídia social com solução de alternador de temas
 
-Esta é uma solução para o [Social media dashboard with theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H). Os desafios do Frontend Mentor ajudam você a melhorar suas habilidades de codificação criando projetos realistas.
+
+
+
+
+
+ 
 
 ## Índice
 
-- [Visão geral](#visão geral)
-  - [O desafio](#the-challenge)
-  - [Captura de tela](#captura de tela)
-  - [Links](#links)
+<br>
+
+- [O desafio](#the-challenge)
+- [Visão geral](#visão-geral)
+- [Captura de tela](#captura-de-tela)
+- [Links](#links)
 - [Meu processo](#meu-processo)
-  - [Construído com](#construído com)
-  - [O que aprendi](#o-que-aprendi)
-  - [Desenvolvimento contínuo](#desenvolvimento contínuo)
-  - [Recursos úteis](#useful-resources)
+- [Construído com](#construído-com)
+- [O que aprendi](#o-que-aprendi)
+- [Desenvolvimento contínuo](#desenvolvimento-contínuo)
+- [Recursos úteis](#useful-resources)
 - [Autor](#autor)
 - [Agradecimentos](#agradecimentos)
 
@@ -32,13 +39,12 @@ Os usuários devem ser capazes de:
 
 ![](./capturadetela.jpg)
 
-Adicione uma captura de tela da sua solução. A maneira mais fácil de fazer isso é usar o Firefox para visualizar seu projeto, clicar com o botão direito do mouse na página e selecionar "Fazer uma captura de tela". Você pode escolher uma captura de tela de altura total ou uma cortada com base no tamanho da página. Se for muito longo, talvez seja melhor cortá-lo.
+<div align="center">
+  <img src="design/active-states-dark.jpg"/>
+  <img src="design/active-states-light.jpg">
+  <img src="">
+</div> 
 
-Como alternativa, você pode usar uma ferramenta como [FireShot](https://getfireshot.com/) para fazer a captura de tela. FireShot tem uma opção gratuita, então você não precisa comprá-la.
-
-Em seguida, corte/otimize/edite sua imagem como quiser, adicione-a ao seu projeto e atualize o caminho do arquivo na imagem acima.
-
-*Nota: Exclua esta nota e os parágrafos acima ao adicionar sua captura de tela. Se preferir não adicionar uma captura de tela, sinta-se à vontade para remover esta seção inteira.*
 
 ### Links
 
